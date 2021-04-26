@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
 
-class LogIn extends Component {
+class PayRent extends Component {
   render() {
     return (
-      <View>
+      <View style={{ justifyContent: "center", alignItems: "center" }}>
         <Text>Login Screen</Text>
       </View>
     );
   }
 }
 
-export default LogIn;
+export default PayRent;
