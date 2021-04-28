@@ -97,7 +97,7 @@ class Main extends Component {
                   name="user-plus"
                   type="font-awesome"
                   color="white"
-                  style={{ marginRight: 10 }}
+                  iconStyle={{ marginRight: 10 }}
                   onPress={() => navigation.navigate("Register")}
                 />
               ),

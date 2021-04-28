@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { StyleSheet, View, ScrollView, Image, Button } from "react-native";
-import { Input, CheckBox } from "react-native-elements";
+import { StyleSheet, View, ScrollView, Image } from "react-native";
+import { Input, CheckBox, Button } from "react-native-elements";
 import * as SecureStore from "expo-secure-store";
 
 class Home extends Component {
@@ -75,7 +75,7 @@ class Home extends Component {
             <Button
               onPress={() => this.handleLogin()}
               title="Login"
-              color="#585858"
+              buttonStyle={{ backgroundColor: "#585858" }}
             />
           </View>
         </View>
