@@ -12,6 +12,7 @@ import PayRent from "./PayRentScreen";
 import Home from "./HomeComponent";
 import Register from "./RegisterComponent";
 import Contact from "./ContactComponent";
+import News from "./NewsComponent";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -26,6 +27,8 @@ function getHeaderTitle(route) {
       return "Pay Rent";
     case "Maintenance":
       return "Maintenance Request";
+    case "News":
+      return "News";
     case "Contact Us":
       return "Contact Us";
   }
@@ -66,6 +69,15 @@ function MainTabs() {
               type="material-community"
               color="white"
             />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="News"
+        component={News}
+        options={{
+          tabBarIcon: () => (
+            <Icon name="newspaper-o" type="font-awesome" color="white" />
           ),
         }}
       />
