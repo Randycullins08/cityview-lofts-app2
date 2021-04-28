@@ -4,7 +4,13 @@ import { ScrollView, View, Text } from "react-native";
 class Maintenance extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView
+        contentContainerStyle={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <View>
           <Text>Maintenance Request Form</Text>
         </View>

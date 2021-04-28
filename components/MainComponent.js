@@ -10,6 +10,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Maintenance from "./MaintenanceComponent";
 import PayRent from "./PayRentScreen";
 import Home from "./HomeComponent";
+import Register from "./RegisterComponent";
+import Contact from "./ContactComponent";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -69,7 +71,7 @@ function MainTabs() {
       />
       <Tab.Screen
         name="Contact Us"
-        component={Maintenance}
+        component={Contact}
         options={{
           tabBarIcon: () => (
             <Icon name="person-outline" type="ionicon" color="white" />
@@ -88,13 +90,33 @@ class Main extends Component {
           <Stack.Screen
             name="Cityview Renters Portal"
             component={MainTabs}
-            options={({ route }) => ({
+            options={({ route, navigation }) => ({
               headerTitle: getHeaderTitle(route),
+              headerRight: () => (
+                <Icon
+                  name="user-plus"
+                  type="font-awesome"
+                  color="white"
+                  style={{ marginRight: 10 }}
+                  onPress={() => navigation.navigate("Register")}
+                />
+              ),
               headerStyle: {
                 backgroundColor: "#585858",
               },
               headerTintColor: "white",
             })}
+          />
+          <Stack.Screen
+            name="Register"
+            component={Register}
+            headerTitle="Register"
+            options={{
+              headerStyle: {
+                backgroundColor: "#585858",
+              },
+              headerTintColor: "white",
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>

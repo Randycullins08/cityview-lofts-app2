@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
 
-class PayRent extends Component {
+class Contact extends Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>This will be the pay rent screen</Text>
+        <Text>This will be the contact us page</Text>
       </View>
     );
   }
 }
 
-export default PayRent;
+export default Contact;
