@@ -93,6 +93,7 @@ class Maintenance extends Component {
             <Image
               source={require("./images/CityviewLoftsLogo.png")}
               style={styles.image}
+              resizeMode="contain"
             />
           </View>
           <Input
