@@ -16,7 +16,7 @@ class Contact extends Component {
   render() {
     return (
       <ScrollView contentContainerStyle={styles.container}>
-        <Animatable.View animation="zoomIn" duration={2000} delay={1000}>
+        <Animatable.View animation="zoomIn" duration={2000} delay={100}>
           <Card wrapperStyle={{ margin: 20 }}>
             <Card.Title>Contact Information</Card.Title>
             <Card.Divider />

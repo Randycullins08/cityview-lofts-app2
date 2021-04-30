@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { ScrollView, Text, StyleSheet, Image } from "react-native";
-import { Card, Button, Icon } from "react-native-elements";
+import { Card } from "react-native-elements";
 import * as Animatable from "react-native-animatable";
 
 class News extends Component {
   render() {
     return (
       <ScrollView contentContainerStyle={styles.container}>
-        <Animatable.View animation="fadeInDown" duration={2000} delay={1000}>
+        <Animatable.View animation="fadeInDown" duration={2000} delay={100}>
           <Card wrapperStyle={{ margin: 20 }}>
             <Image
               style={styles.image}
@@ -21,7 +21,7 @@ class News extends Component {
             <Card.Divider />
             <Text style={styles.title}>Upcoming Events:</Text>
             <Text style={{ marginBottom: 10 }}>
-              July 4th Ping Pong Tournament
+              July 4th Ping Pong Tournament!
             </Text>
             <Text style={{ marginBottom: 10 }}>Location: Clubhouse</Text>
             <Text style={{ marginBottom: 10 }}>All are welcome!</Text>

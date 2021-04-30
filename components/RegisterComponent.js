@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, StyleSheet, ScrollView, Image } from "react-native";
-import { Button, Icon, Input, CheckBox } from "react-native-elements";
+import { Button, Input, CheckBox } from "react-native-elements";
 import * as SecureStore from "expo-secure-store";
 
 class Register extends Component {

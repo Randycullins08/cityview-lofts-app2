@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
+import { Card } from "react-native-elements";
+import { PaymentsStripe as Stripe } from "expo-payments-stripe";
 
 class PayRent extends Component {
   render() {
