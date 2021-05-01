@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { StyleSheet } from "react-native";
 import { Icon } from "react-native-elements";
 import {
   NavigationContainer,
@@ -9,7 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Maintenance from "./MaintenanceComponent";
 import PayRent from "./PayRentScreen";
-import Home from "./HomeComponent";
+import Login from "./LoginComponent";
 import Register from "./RegisterComponent";
 import Contact from "./ContactComponent";
 import News from "./NewsComponent";
@@ -45,7 +44,7 @@ function MainTabs() {
     >
       <Tab.Screen
         name="Log In"
-        component={Home}
+        component={Login}
         options={{
           tabBarIcon: () => <Icon name="login" type="entype" color="white" />,
         }}
@@ -116,7 +115,7 @@ class Main extends Component {
               headerStyle: {
                 backgroundColor: "#585858",
               },
-              headerTintColor: "white",
+              headerTintColor: "#fff",
             })}
           />
           <Stack.Screen
@@ -127,7 +126,7 @@ class Main extends Component {
               headerStyle: {
                 backgroundColor: "#585858",
               },
-              headerTintColor: "white",
+              headerTintColor: "#fff",
             }}
           />
         </Stack.Navigator>
@@ -135,7 +134,5 @@ class Main extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({});
 
 export default Main;

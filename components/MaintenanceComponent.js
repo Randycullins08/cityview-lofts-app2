@@ -80,7 +80,7 @@ class Maintenance extends Component {
   sendMail() {
     MailComposer.composeAsync({
       recipients: ["management@cityviewlofts.com"],
-      subject: "Inquiry",
+      subject: "Maintenance Request",
       body: "To whom it may concern:",
     });
   }

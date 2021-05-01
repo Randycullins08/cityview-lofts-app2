@@ -3,7 +3,7 @@ import { StyleSheet, View, ScrollView, Image } from "react-native";
 import { Input, CheckBox, Button } from "react-native-elements";
 import * as SecureStore from "expo-secure-store";
 
-class Home extends Component {
+class Login extends Component {
   scrollRef = React.createRef();
   constructor(props) {
     super(props);
@@ -101,4 +101,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Login;
